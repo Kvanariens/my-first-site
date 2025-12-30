@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Мой первый сайт</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Universe</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Добро пожаловать!</h1>
-  <p>Нажми на ссылку ниже:</p>
-  <a href="https://google.com" target="_blank">Перейти в Google</a>
+  <header class="navbar">
+  <div class="left-buttons">
+    <button class="mood-btn sad" onclick="setMood('sad')">Грустный</button>
+    <button class="mood-btn happy" onclick="setMood('happy')">Весёлый</button>
+  </div>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" alt="Marvel" class="logo">
+
+  <nav>
+    <a href="#home">Главная</a>
+    <a href="#movies">Фильмы</a>
+    <a href="#heroes">Герои</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+</header>
+
+
+  <section id="home" class="hero">
+    <h1>Вселенная Marvel</h1>
+    <p>Герои. Истории. Легенды.</p>
+    <button onclick="scrollToSection('movies')">Смотреть фильмы</button>
+  </section>
+
+  <section id="movies" class="movies">
+    <h2>Лучшие фильмы Marvel</h2>
+    <div class="grid">
+      <div class="card">
+        <a href="https://www.imdb.com/title/tt0371746/" target="_blank">
+        <img src=https://avatars.mds.yandex.net/i?id=a8571b9612fa11cfe55e9161fec6b3de_l-5878684-images-thumbs&n=13/>
+        </a>
+        <h3>Iron Man (2008)</h3>
+      </div>
+      <div class="card">
+          <a href="https://www.imdb.com/title/tt0848228/" target="_blank">
+        <img src=https://avatars.mds.yandex.net/i?id=9f0f514b04e3fb17ef9401f8d9da8d7e8017e75d-7758910-images-thumbs&n=13/>
+        </a>
+        <h3>The Avengers (2012)</h3>
+      </div>
+      <div class="card">
+         <a href="https://www.imdb.com/title/tt1825683/" target="_blank">
+        <img src=https://avatars.mds.yandex.net/i?id=5de3457e2e00afed5a8536f648dc98033834d9f6-8173266-images-thumbs&n=13/>
+        </a>
+        <h3>Black Panther (2018)</h3>
+      </div>
+      <div class="card">
+        <a href="https://www.imdb.com/title/tt2015381/" target="_blank">
+        <img src=https://avatars.mds.yandex.net/i?id=258d94d54d1d2034899e4bc859fe0326_l-2899831-images-thumbs&n=13>
+        </a>
+        <h3>Guardians of the Galaxy (2014)</h3>
+      </div>
+      <div class="card">
+          <a href="https://www.imdb.com/title/tt2250912/" target="_blank">
+        <img src=https://avatars.mds.yandex.net/i?id=094378fef06d0cbefba208192f72c642_l-3521501-images-thumbs&n=13/>
+          </a>
+        <h3>Spider-Man: Homecoming (2017)</h3>
+      </div>
+      </div>
+  </section>
+
+  <section id="heroes" class="heroes">
+    <h2>Герои Marvel</h2>
+    <p>1 Железный человек (Тони Старк). Гений, миллиардер, плейбой, филантроп. Один из самых популярных героев вселенной, имеющий три сольных фильма.</p>
+    <p>2 Мстители» (англ. Avengers) — элитная команда супергероев из комиксов компании</p>
+    <p>3 Чёрная пантера (Т’Чалла). Король Ваканды, носящий узнаваемый костюм, который не пробить пулями.</p>
+    <p>4 Стражи галактики (Питер Квил, Гамора, Дракс, Мантис, Груд, Ракета). Команда супергероев по спасению мира.</p>
+    <p>5 Главный герой, Питер Паркер. После помощи Железному человеку в его конфронтации с Капитаном Америкой попадает под опеку Тони Старка и его помощника Хэппи Хогана</p>
+</section>
+
+  <section id="contact" class="contact">
+    <h2>Контакты</h2>
+    <p>Сайт создан фанатам Marvel. Любительский проект.</p>
+  </section>
+
+  <footer>
+    © 2025 Marvel Fan Project | Сделано с кайфом 
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
-
